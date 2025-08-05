@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #0837C5;
+    --text-color: #020C2C;
+    --background-color: #EBF0FE;
+    --font-family: monospace, sans-serif;
+
+    --page-width: 800px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.highlighter-rouge {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 16px 32px;
+}
+
+main {
+    max-width: var(--page-width);
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+}

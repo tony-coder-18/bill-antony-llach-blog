@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="my-logo">
+            <a href="/">
+                <img src="/images/billslogo.svg" alt="logo" class="custom-logo" width="54px" height="54px">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        {{ content }}
+        
+        <section>
+            <h2>
+                {{ page.contact_title | default: "Contact Me" }}
+            </h2>
+            <p>
+                Feel free to contact me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        Copyright &copy; {{ site.time | date: "%Y" }}
+    </footer>
+
+</body>
+
+</html>

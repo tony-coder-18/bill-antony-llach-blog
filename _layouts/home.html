@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<main>
+    <div class="content-container">
+        <h1>
+            {{ site.title }}
+        </h1>
+        <p>
+            {{ site.description }}
+        </p>
+
+        <section>
+            {{ content }}
+        </section>
+
+        <div class="my-posts">
+
+            <h2>
+                Recent Posts
+            </h2>
+            {% for post in site.posts %}
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <article class="article-loop">
+                    <h2>
+                        {{ post.title }}
+                    </h2>
+                    <div class="flex-info">
+                        <p>
+                            {{ post.date | date: "%B %d, %Y" }}
+                        </p>
+                    </div>
+                    {{ post.excerpt | strip_html | truncate: 150 }}
+                </article>
+            </a>
+            {% endfor %}
+        </div>
+
+    </div>
+</main>
