@@ -17,3 +17,6 @@ In this way I could look at all the code at the same time, which made a better d
 I hope it's useful for you also.
 
 S.D.G.
+
+## Further reference and sources
+- [This answer from Stack Overflow](https://stackoverflow.com/questions/315485/how-can-i-toggle-word-wrap-in-visual-studio )   
