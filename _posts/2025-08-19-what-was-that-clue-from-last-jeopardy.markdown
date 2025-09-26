@@ -5,7 +5,8 @@ date:   2025-09-26
 categories: "projects"
 ---
 
-This is the link to check it out live: https://jeopardy-clue-finder.vercel.app 
+Link to check the project live:
+[What was that clue from last Jeopardy! Live Site](https://jeopardy-clue-finder.vercel.app)
 
 ## Problem to Solve
 When I started working at my current company, it was the first time I was in the US.
