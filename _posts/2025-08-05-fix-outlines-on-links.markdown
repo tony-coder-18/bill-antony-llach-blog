@@ -2,7 +2,7 @@
 layout: single
 title:  "Why Outlines in links are not showing up when tabbing to it"
 date:   2025-08-05
-categories: "web-development"
+categories: "blog"
 ---
 Having outlines when the user tabs to an interactive element is very important to make websites #a11y (accessible).
 

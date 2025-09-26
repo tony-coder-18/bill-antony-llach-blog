@@ -2,7 +2,7 @@
 layout: single
 title:  "How to Truncate a text to any line height with ellipsis"
 date:   2025-08-19
-categories: "web-development CSS"
+categories: "blog"
 ---
 ## The problem
 At my job, I needed to make sure a panel title didn't go over 3 lines of height, and if the text content was greater than that, it should have an ellipsis at the end (the "...").

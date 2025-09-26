@@ -2,7 +2,7 @@
 layout: single
 title:  "How to make all the code visible in Visual Studio 2022 (Toggle Word Wrapp)"
 date:   2025-08-12
-categories: "web-development tools IDE"
+categories: "blog"
 ---
 At my job we use Visual Studio 2022 as main IDE. I had this issue about not being able to see all the words at the same time in my laptop.
 
