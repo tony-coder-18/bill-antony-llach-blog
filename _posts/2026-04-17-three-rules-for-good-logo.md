@@ -22,7 +22,8 @@ in a lot of differnet dimensions and contexts. E.g. large billboards, websites,
 favicons, business cards, etc.
 
 
-I learned these principles from this [video by The Futur](https://youtu.be/mxgOY2Ms-YI?si=LfZYsXSMHAg-Kak4&t=495) Youtube Channel.
+I learned these principles from this [video by The Futur](https://youtu.be/mxgOY2Ms-YI?si=LfZYsXSMHAg-Kak4&t=495) Youtube Channel. 
+They quoted the designer Ziggy Javier as the quote source. 
 
 Very nice video, it's part of a real client branding design series.
 
