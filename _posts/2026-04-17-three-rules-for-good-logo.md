@@ -8,7 +8,7 @@ categories: "blog"
 At the end of this blog article you'll learn 3 rules
 that, if met, form a good logo.
 
-## 1. A Logo Should Be Appropiated
+## 1. A Logo Should Be Appropiate
 What I understand from this is that a logo should make sense for the type of
 business it is representing.
 
@@ -18,7 +18,7 @@ viewers mind so that it will be remembered later on.
 
 ## 3. A Logo Should Be Simple
 What I understand from this is that a logo should be able to work 
-in a lot of differnet dimensions and contexts. E.g. large billboards, websites, 
+in a lot of different dimension and context. E.g. large billboards, websites, 
 favicons, business cards, etc.
 
 
