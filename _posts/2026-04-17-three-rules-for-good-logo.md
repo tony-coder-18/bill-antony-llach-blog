@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Three Rules I Learned to a Good Logo"
+title:  "Three Rules I Learned for a Good Logo"
 date:   2026-04-17
 categories: "blog"
 ---
