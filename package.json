@@ -1,0 +1,22 @@
+{
+  "name": "billantonyblog",
+  "private": true,
+  "scripts": {
+    "sync:content": "node scripts/sync-sanity-posts.mjs",
+    "import:content": "node scripts/import-markdown-to-sanity.mjs",
+    "build": "npm run sync:content && bundle exec jekyll build",
+    "sanity:dev": "npm --prefix sanity-studio run dev",
+    "sanity:build": "npm --prefix sanity-studio run build"
+  },
+  "dependencies": {
+    "@portabletext/block-tools": "^3.0.0",
+    "@portabletext/to-html": "^2.0.15",
+    "@sanity/client": "^7.2.0",
+    "@sanity/schema": "^3.83.2",
+    "dotenv": "^17.2.3",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
+    "jsdom": "^27.0.0",
+    "marked": "^16.4.1"
+  }
+}

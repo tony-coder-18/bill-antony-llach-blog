@@ -1,0 +1,18 @@
+{
+  "name": "billantonyblog-sanity-studio",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "@sanity/icons": "^3.7.4",
+    "@sanity/vision": "^3.83.2",
+    "dotenv": "^17.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sanity": "^3.83.2",
+    "styled-components": "^6.3.12"
+  }
+}

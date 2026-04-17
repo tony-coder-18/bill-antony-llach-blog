@@ -3,3 +3,9 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+node_modules
+sanity-studio/node_modules
+sanity-studio/dist
+_sanity_posts
+.env
+.env.local

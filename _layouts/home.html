@@ -2,6 +2,11 @@
 layout: default
 ---
 
+{% assign posts_source = site.sanity_posts %}
+{% if posts_source == empty %}
+    {% assign posts_source = site.posts %}
+{% endif %}
+
 <main>
     <div class="content-container">
         <h1>
@@ -21,8 +26,34 @@ layout: default
                 Recent Blog Posts
             </h2>
 
-            {% for post in site.posts %}
-                {% if post.categories contains 'blog' %}
+            {% assign blog_posts = posts_source | where_exp: "post", "post.categories contains 'blog'" %}
+            {% assign blog_posts = blog_posts | sort: "date" | reverse %}
+            {% for post in blog_posts %}
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <article class="article-loop">
+                        <h3>
+                            {{ post.title }}
+                        </h3>
+                        <div class="flex-info">
+                            <p>
+                                {{ post.date | date: "%B %d, %Y" }}
+                            </p>
+                        </div>
+                        {{ post.excerpt | strip_html | truncate: 150 }}
+                    </article>
+                </a>
+            {% endfor %}
+    
+            </section>
+
+            <section>
+                <h2>
+                    Projects
+                </h2>
+
+                {% assign project_posts = posts_source | where_exp: "post", "post.categories contains 'projects'" %}
+                {% assign project_posts = project_posts | sort: "date" | reverse %}
+                {% for post in project_posts %}
                     <a href="{{ post.url | prepend: site.baseurl }}">
                         <article class="article-loop">
                             <h3>
@@ -36,32 +67,6 @@ layout: default
                             {{ post.excerpt | strip_html | truncate: 150 }}
                         </article>
                     </a>
-                {% endif %}
-            {% endfor %}
-    
-            </section>
-
-            <section>
-                <h2>
-                    Projects
-                </h2>
-
-                {% for post in site.posts %}
-                    {% if post.categories contains 'projects' %}
-                        <a href="{{ post.url | prepend: site.baseurl }}">
-                        <article class="article-loop">
-                            <h3>
-                                {{ post.title }}
-                            </h3>
-                            <div class="flex-info">
-                                <p>
-                                    {{ post.date | date: "%B %d, %Y" }}
-                                </p>
-                            </div>
-                            {{ post.excerpt | strip_html | truncate: 150 }}
-                        </article>
-                    </a>
-                    {% endif %}
                 {% endfor %}
             </section>
     </div>
